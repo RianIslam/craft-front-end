@@ -1,0 +1,18 @@
+.signup-bg{
+    background-image: url('../image/signup.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signup-color{
+    color: #6D31F5;
+}
+
+.signup-paragraph{
+    font-size: 13px;
+}
+
+.signup-btn-color{
+    background-color: #6D31F5;
+}

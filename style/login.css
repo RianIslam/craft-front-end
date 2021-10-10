@@ -1,0 +1,18 @@
+.login-bg{
+    background-image: url('../image/loginBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.login-color{
+    color: #6D31F5;
+}
+.login-btn-color{
+    background-color: #6D31F5;
+}
+
+.login-paragraph{
+    font-size: 13px;
+}
