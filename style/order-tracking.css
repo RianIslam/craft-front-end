@@ -1,0 +1,25 @@
+
+.orderImage{
+    width: 130px;
+}
+.orderImage img{
+    width: 100%;
+}
+
+.reviewButton{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #b99bff;
+    color: #6D31F5;
+}
+
+.orderParagraph{
+    font-size: 12px;
+}
+.tbody, .td, .tfoot, .th, .thead, .tr {
+    border-color: #ddd;
+    border-style: solid;
+    border-width: 0;
+        border-bottom-width: 0px;
+}
