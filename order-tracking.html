@@ -18,6 +18,7 @@
     <title>Order Tracking</title>
   </head>
   <body>
+    <div class="orderTracking">
     <div class="container">
       <div>
         <h6 class="pt-5 pb-2">
@@ -32,42 +33,52 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Status</th>
               <th scope="col">
-                <span class="ps-4"> Image</span>
+                <p class="d-flex align-items-center" >Status</p>
               </th>
-              <th scope="col">Food Name</th>
-              <th scope="col">Price</th>
-              <th scope="col">Discount</th>
-              <th scope="col">Total</th>
+              <th scope="col">
+                   <p class="d-flex align-items-center ps-4">Image</p>
+              </th>
+              <th scope="col">
+                <p class="d-flex align-items-center ">Food Name</p>
+              </th>
+              <th scope="col">
+               <p class="d-flex align-items-center "> Price</p>
+              </th>
+              <th scope="col">
+                <p class="d-flex align-items-center ">Discount</p>
+              </th>
+              <th scope="col">
+                <p class="d-flex align-items-center justify-content-end">Total</p>
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr class="border-bottom-5 border-secondary">
-              <th scope="row">
-                <h6 class="text-center"> <i class="far fa-check-circle"></i> <span class="px-2"> Confirm</span></h6>
-                <div class="text-center">
-                  <button class="px-4 reviewButton">Give Review</button>
-                </div>
-              </th>
+              <td class="" >
+               <div class="pt-lg-3 pt-sm-0" >
+                <h6 class="py-1"><i class="confirmIcon far fa-check-circle"></i> <span class="px-2"> Confirm</span></h6>
+                <button class="px-4 reviewButton">Give Review</button>
+               </div>
+              </td>
               <td>
-                <div class="orderImage pe-auto">
+                <div class="orderImage pt-lg-2 pt-sm-4">
                   <img src="./image/cart-item1.png" alt="" />
                 </div>
               </td>
               <td>
-                <p>Food Item 1</p>
-                <p>Qty 2 Pcs</p>
-                <p>PID : #er280652</p>
+                <p class="trackingParagraph">Food Item 1</p>
+                <p class="trackingParagraph">Qty 2 Pcs</p>
+                <p class="text-secondary trackingParagraph">PID : #er280652</p>
               </td>
               <td>
-                <h6>1000.00 BDT</h6>
+                <h6 class="trackingHeader">1000.00 BDT</h6>
               </td>
               <td>
-                <h6>200.00 BDT</h6>
+                <h6 class="trackingHeader">200.00 BDT</h6>
               </td>
               <td>
-                <h6>800.00 BDT</h6>
+                <h6 class="d-flex justify-content-end trackingHeader">800.00 BDT</h6>
               </td>
             </tr>
           </tbody>
@@ -77,16 +88,17 @@
 
       <div class="orderTotal">
         <div class="d-flex justify-content-end">
-            <div class="px-5">
+            <div class="px-5 text-end">
                 <h6>Total</h6>
                 <h6>Subtotal</h6>
             </div>
-            <div  class="px-5">
+            <div  class="ps-5">
                 <h6>2400.00 BDT</h6>
                 <h6>2400.00 BDT</h6>
             </div>
         </div>
       </div>
     </div>
+  </div>
   </body>
 </html>

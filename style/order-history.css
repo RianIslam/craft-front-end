@@ -1,6 +1,7 @@
 .historyImage{
     width: 150px;
 }
+
 .historyImage img{
     width: 100%;
 }
@@ -8,6 +9,7 @@
 .orderHistoryBox{
     border-radius: 10px;
 }
+
 .historyTopBorder{
     border-top: 5px solid #6D31F5;
 }
