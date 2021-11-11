@@ -1,0 +1,53 @@
+.bg{
+    background: url('../img/homesection.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .hexagon{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin:  50px 20px 70px;
+}
+
+.container .hexagon::before{
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(rgba(0,0,0,0.15),transparent,transparent);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.container .hexagon:hover::before{
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+
+
+
+.container .hexagon .shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: 0.5s;
+}
+
+.container .hexagon:hover .shape{
+    transform: translate(-30px);
+
+}
