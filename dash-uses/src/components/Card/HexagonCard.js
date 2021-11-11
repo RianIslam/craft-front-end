@@ -7,18 +7,6 @@ const HexagonCard = () => {
                 <h3 className="title">Web Development</h3>
                 <span className="counter">700</span>
             </div>
-            <div className="box">
-                <h3 className="title">Web Development</h3>
-                <span className="counter">700</span>
-            </div>
-            <div className="box">
-                <h3 className="title">Web Development</h3>
-                <span className="counter">700</span>
-            </div>
-            <div className="box">
-                <h3 className="title">Web Development</h3>
-                <span className="counter">700</span>
-            </div>
         </div>
     )
 }
