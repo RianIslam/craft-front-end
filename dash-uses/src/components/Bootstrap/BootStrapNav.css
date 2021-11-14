@@ -1,3 +1,16 @@
-.bt-bg{
-    background: #0606b4;
+/* .bt-bg{
+    background: #0623B1;
+} */
+
+.manualNavbar {
+    background: #0623B1;
+    height: 80px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.startScroll{
+    background: #041774;
+    height: 100px;
 }
