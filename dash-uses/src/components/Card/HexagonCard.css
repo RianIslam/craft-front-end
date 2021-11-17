@@ -30,3 +30,16 @@
 }
 
 
+
+.leadIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.iconDesign{
+    background-color: #530753;
+    padding: 5px;
+}
