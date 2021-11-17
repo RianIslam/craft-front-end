@@ -3,6 +3,7 @@ import './App.css';
 import BootStrapNav from './components/Bootstrap/BootStrapNav';
 import Card from './components/Card/Card';
 import HexagonCard from './components/Card/HexagonCard';
+import ProfileCard from './components/Card/ProfileCard';
 import Nav from './components/Nav/Nav';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <BootStrapNav/>
      <Card/>
      {/* <HexagonCard/> */}
+     <ProfileCard/>
     </div>
   );
 }
