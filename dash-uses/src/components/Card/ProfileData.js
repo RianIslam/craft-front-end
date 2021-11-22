@@ -21,6 +21,7 @@ const ProfileData = ({
           </div>
           <div>
               <div className="leadIcon">
+              <div>Card</div>
                   <h5 className="rounded-circle iconDesign text-white ">{iconTwitter}</h5>
                   <h5 className="rounded-circle mx-2 iconDesign text-white ">{iconFacebook}</h5>
                   <h5 className="rounded-circle mx-2 iconDesign text-white ">{iconLinkedin}</h5>
