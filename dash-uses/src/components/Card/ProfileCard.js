@@ -6,11 +6,16 @@ import ProfileData from "./ProfileData";
 const ProfileCard = () => {
   return (
     <div className="container">
-       <div className="row ">
+      <div className="row">
+      <div className="col-md-6"></div>
+      <div className="col-md-6">
+      <div className="row ">
           {data.map((item, index) => (
             <HoverCard index={index} item={item} />
           ))}
         </div>
+      </div>
+      </div>
 
       <div className="py-5">
         <div className="row ">
