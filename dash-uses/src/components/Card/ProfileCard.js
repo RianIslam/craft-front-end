@@ -7,7 +7,9 @@ const ProfileCard = () => {
   return (
     <div className="container">
       <div className="row">
-      <div className="col-md-6"></div>
+      <div className="col-md-6">
+        <h1 className="text-center" >Hover card</h1>
+      </div>
       <div className="col-md-6">
       <div className="row ">
           {data.map((item, index) => (

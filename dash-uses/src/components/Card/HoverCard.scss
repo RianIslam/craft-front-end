@@ -10,7 +10,7 @@
   }
   
   .card {
-    max-width: 15rem;
+    width: 15rem;
     color: #ffffffda;
     padding: 1.5rem;
     background-color: #202022;
@@ -67,4 +67,11 @@
 }
 .cards:hover > .card:not(:hover) {
   opacity: 0.5;
+}
+
+
+@media(max-width:600px){
+  .card{
+    max-width: 15rem;
+  }
 }
