@@ -1,7 +1,5 @@
 
 
-
-
 .cards {    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -74,4 +72,13 @@
   .card{
     max-width: 15rem;
   }
+  .padding-Hover{
+    // align-items: center;
+    // justify-content: center;
+    // display: flex;
+     padding-left: 100px;
+   }
 }
+
+ 
+ 
