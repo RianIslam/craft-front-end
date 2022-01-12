@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import "./App.css";
+import Header from "./components/Header";
+import NotesList from "./components/NotesList";
 import { Note } from "./models/note.model";
 
 function App() {
@@ -13,7 +16,19 @@ function App() {
     },
   ]);
 
-  return <div className="App">Hello</div>;
+  return (
+    <div>
+      <Header />
+
+      <Container>
+        <Row>
+          <Col>
+            <NotesList />
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
 }
 
 export default App;
