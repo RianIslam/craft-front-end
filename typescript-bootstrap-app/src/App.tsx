@@ -20,10 +20,10 @@ function App() {
     <div>
       <Header />
 
-      <Container>
+      <Container className="mt-5">
         <Row>
           <Col>
-            <NotesList />
+            <NotesList notes={notes} />
           </Col>
         </Row>
       </Container>

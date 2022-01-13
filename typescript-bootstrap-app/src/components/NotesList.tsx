@@ -1,11 +1,15 @@
 import React from "react";
+import { Note } from "../models/note.model";
 
-interface Props {}
+interface Props {
+  notes: Note[];
+}
 
-const NotesList = (props: Props) => {
+const NotesList = ({ notes }: Props) => {
   return (
     <div>
       <h2 className="mt-3">Notes</h2>
+      <div>{render}</div>
     </div>
   );
 };
