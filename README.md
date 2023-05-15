@@ -59,3 +59,23 @@ The tests folder contains the unit and integration tests for your Laravel applic
 vendor
 
 The vendor folder contains the third-party libraries that are used by your Laravel application. This includes libraries such as Laravel itself, as well as any other libraries that you have installed.
+
+
+Create Some Screen Short
+![1](https://github.com/mdrianislam0or1/example-app/assets/67714964/9d4f2bf6-9fa6-413e-a88e-af90f7a526d4)
+
+
+create Route in Web.php
+
+
+![2](https://github.com/mdrianislam0or1/example-app/assets/67714964/a4e22666-6227-40c7-801b-ae5f0dc0bd8d)
+
+
+
+create Route in api.php
+
+
+![3](https://github.com/mdrianislam0or1/example-app/assets/67714964/e2426aa8-ee27-4a91-88c2-f01613990654)
+
+
+
