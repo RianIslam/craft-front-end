@@ -1,19 +1,14 @@
 <h3>
 Step 1: Install Composer
-
 composer create-project laravel/laravel my-app
-
 <br>
 Step 2: Create a new Laravel project
-
 composer create-project laravel/laravel my-app
 <br>
 Step 3: Configure your application key
-
 php artisan key:generate
 <br>
 Step 4: Start the development server
-
 php artisan serve
 </h3>
 
