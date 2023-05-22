@@ -1,0 +1,177 @@
+1.
+contoller file
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class UserController extends Controller
+{
+    public function submitForm(Request $request)
+    {
+        $name = $request->input('name');
+        return response()->json(['name' => $name]);
+    }
+}
+
+
+web.php file
+
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Route;
+
+Route::post('/submit', [UserController::class, 'submitForm'])->name('submit');
+
+
+2.
+web.php file
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Route;
+
+Route::post('/retrieve-user-agent', [UserController::class, 'retrieveUserAgent'])->name('retrieveUserAgent');
+
+controller file
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class UserController extends Controller
+{
+    public function retrieveUserAgent(Request $request)
+    {
+        $userAgent = $request->header('User-Agent');
+        return response()->json(['user_agent' => $userAgent]);
+    }
+}
+
+
+3.
+web.php file
+
+use App\Http\Controllers\APIController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/api/endpoint', [APIController::class, 'handleEndpoint'])->name('api.endpoint');
+
+
+controller file 
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class APIController extends Controller
+{
+    public function handleEndpoint(Request $request)
+    {
+        $page = $request->query('page', null);
+        return response()->json(['page' => $page]);
+    }
+}
+
+
+
+
+4.
+
+web.php file
+use App\Http\Controllers\APIController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/response', [APIController::class, 'createJsonResponse'])->name('api.response');
+
+
+controller file
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class APIController extends Controller
+{
+    public function createJsonResponse()
+    {
+        $data = [
+            'name' => 'John Doe',
+            'age' => 25
+        ];
+
+        $response = [
+            'message' => 'Success',
+            'data' => $data
+        ];
+
+        return response()->json($response);
+    }
+}
+
+
+5.
+web.php file
+
+use App\Http\Controllers\FileUploadController;
+use Illuminate\Support\Facades\Route;
+
+Route::post('/upload', [FileUploadController::class, 'handleUpload'])->name('file.upload');
+
+
+controller file 
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
+class FileUploadController extends Controller
+{
+    public function handleUpload(Request $request)
+    {
+        if ($request->hasFile('avatar')) {
+            $file = $request->file('avatar');
+            $filename = $file->getClientOriginalName();
+            $file->storeAs('uploads', $filename, 'public');
+            return response()->json(['message' => 'File uploaded successfully']);
+        }
+
+        return response()->json(['message' => 'No file uploaded'], 400);
+    }
+}
+
+
+
+6.
+web.php file
+
+use App\Http\Controllers\CookieController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/retrieve-cookie', [CookieController::class, 'retrieveRememberToken'])->name('retrieve.cookie');
+
+
+controller file
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class CookieController extends Controller
+{
+    public function retrieveRememberToken(Request $request)
+    {
+        $rememberToken = $request->cookie('remember_token');
+
+        $rememberToken = $rememberToken ?? null;
+
+        return response()->json(['remember_token' => $rememberToken]);
+    }
+}
+
+7.
+use Illuminate\Support\Facades\Route;
+
+Route::post('/submit', function (Illuminate\Http\Request $request) {
+    $email = $request->input('email');
+    return response()->json([
+        'success' => true,
+        'message' => 'Form submitted successfully.'
+    ]);
+})->name('submit');
