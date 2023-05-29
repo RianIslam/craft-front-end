@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to Laravel</title>
-    <!-- Include any CSS or JS files here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
     <nav>
-        <!-- Navigation bar content goes here -->
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -15,10 +16,8 @@
     </nav>
 
     <section>
-        <!-- Section content goes here -->
         <h1>Welcome to Laravel!</h1>
     </section>
 
-    <!-- Include any additional scripts here -->
 </body>
 </html>
