@@ -11,15 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('category_id');
-            $table->string('title');
-            $table->string('desc');
-            $table->foreign('category_id')
-                ->references('id')->on('categories')
-                ->restrictOnDelete()
-                ->cascadeOnUpdate();
+            $table->string('name');
+            $table->unsignedBigInteger('article_id');
+            $table->text('message');
+            $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
@@ -30,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('comments');
     }
 };
