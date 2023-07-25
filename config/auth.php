@@ -17,6 +17,14 @@ return [
         'guard' => 'web',
         'passwords' => 'users',
     ],
+    
+    'guards' => [
+        'api' => [
+            'driver' => 'jwt',
+            'provider' => 'users',
+        ],
+    ],
+    
 
     /*
     |--------------------------------------------------------------------------
@@ -113,3 +121,5 @@ return [
     'password_timeout' => 10800,
 
 ];
+
+
